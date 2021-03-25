@@ -1,0 +1,29 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	float num = 0; // 人数
+	float A = 0;//优秀人数
+	float B = 0;//及格人数
+	cin >> num;
+	for (int i = 0; i < num; i++)
+	{
+		int c = 0; //分数
+		cin >> c;
+		if(c >= 60)
+		{
+			B++;
+		}
+		if (c >= 85)
+		{
+			A++;
+		}
+	}
+	int a = float(A / num*100 + 0.5);
+	int b = float(B / num*100 + 0.5);
+	cout << a << endl;
+	cout << b << endl;
+	return 0;
+}
